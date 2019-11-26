@@ -16,7 +16,7 @@ or
 
 ### Example
 
-![example](./static.example.gif)
+![example](./static/example.gif)
 
 ### Created by
 
