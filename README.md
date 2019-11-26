@@ -8,9 +8,15 @@ This is example of both Bottom menu and Drawer menu in one app.
 
 ### Run
 
+#### Android
+
+check `android/local.properties` file for `sdk.dir` property set, then
+
 `npm run adnroid`
 
-or
+#### iOS
+
+`cd ios && pod install`
 
 `npm run ios`
 

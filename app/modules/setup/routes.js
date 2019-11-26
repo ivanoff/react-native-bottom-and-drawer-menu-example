@@ -35,7 +35,7 @@ const MenuImage = ({navigation}) => navigation.state.isDrawerOpen ?
       <SvgUri width="20" height="20" source={require('../images/menu.svg')} />;
 
 const defaultNavigationOptions = ({ navigation }) => ({
-  title: 'Remembo',
+  title: 'Demo App',
   headerStyle: styles.headerStyle,
   headerTitleStyle: styles.headerTitleStyle,
   headerLeft:
