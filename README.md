@@ -2,6 +2,8 @@
 
 This is example of both Bottom menu and Drawer menu in one app.
 
+![example](./static/example.gif)
+
 ### Install
 
 `npm i`
@@ -19,10 +21,6 @@ check `android/local.properties` file for `sdk.dir` property set, then
 `cd ios && pod install`
 
 `npm run ios`
-
-### Example
-
-![example](./static/example.gif)
 
 ### Created by
 
