@@ -4,22 +4,15 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import React, {Component} from 'react';
+import {Platform, StyleSheet, Text, View} from 'react-native';
 import styles from '../../styles/index';
 
-export default class Contact extends Component{
+export default class Contact extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.heading}>
-          Contact Us
-        </Text>
+        <Text style={styles.heading}>Contact Us</Text>
       </View>
     );
   }
