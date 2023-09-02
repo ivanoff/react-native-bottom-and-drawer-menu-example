@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
+import Icon from 'react-native-ico-font-awesome';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
@@ -25,14 +26,20 @@ const opt = {
   About,
 };
 
+const icons = {
+  Home: 'home',
+  Profile: 'magnifying-glass',
+  Config: 'settings',
+};
+
 const MyTabs = () => (
   <Tab.Navigator
     backBehavior="history"
     screenOptions={({route}) => ({
-      // tabBarIcon: ({ color, size }) => {
-      //   const iconName = icons[route.name] || '';
-      //   return <Icon name={iconName} color={color} size={size}/>;
-      // },
+      tabBarIcon: ({ color, size }) => {
+        const iconName = icons[route.name] || '';
+        return <Icon name={iconName} color={color} size={size}/>;
+      },
       headerShown: false,
       tabBarActiveTintColor: '#ff0000',
       tabBarInactiveTintColor: 'gray',
@@ -43,7 +50,7 @@ const MyTabs = () => (
         name={key}
         component={opt[`${key}`]}
         options={
-          ['Home', 'Profile', 'About'].includes(key)
+          ['Home', 'Profile', 'Config'].includes(key)
             ? {}
             : {tabBarButton: () => <></>}
         }
